@@ -28,3 +28,9 @@ Initially, all tests should fail with `NotImplementedError`s.
 To connect your implementation to the tests, complete the
 functions in [./tests/adapters.py](./tests/adapters.py).
 
+# note
+evaluate this model with @data/gsm8k/test.jsonl dataset. first create a prompt to     
+  enforce the response format. use <think> </think> to host think steps and <answer>     
+  </answer> to host the final result. Use r1_zero_reward_fn in                           
+  @cs336_alignment/drgrpo_grader.py to parse answer from llm output. create a parser to  
+  parse answer from @data/gsm8k/test.jsonl dataset. 
